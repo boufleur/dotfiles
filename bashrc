@@ -136,12 +136,12 @@ ssh() {
 }
 
 # configuracoes para o vagrant funcionar dentro do wsl
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-export PATH=$PATH:/usr/local/bin:/mnt/c/Program\ Files/Oracle/VirtualBox
+# export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+# export PATH=$PATH:/usr/local/bin:/mnt/c/Program\ Files/Oracle/VirtualBox
 
 # liga o cron
-CRON_PID=`pidof cron`
-if [ -z $CRON_PID ]
-then
-    sudo cron
-fi
+# CRON_PID=`pidof cron`
+# if [ -z $CRON_PID ]
+# then
+#     sudo cron
+# fi
