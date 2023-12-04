@@ -110,3 +110,14 @@ let g:lightline = {
           \ 'colorscheme': 'Tomorrow_Night',
                 \ }
 
+" edit / source mapping
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" change leader to ,
+let mapleader = ","
+
+" custom remapings
+nnoremap <leader>u viwUe
+inoremap jj <esc>
+inoremap <esc> <nop>
