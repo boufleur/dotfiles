@@ -1,7 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-
+" change leader to ,
+let mapleader = ","
 
 " style
 set bg=dark
@@ -19,6 +20,7 @@ filetype plugin indent on
 " settings for yaml
 au! BufNewFile,BufReadPost *.{yaml,yml,eyaml} set filetype=yaml
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yaml nnoremap <buffer> <localleader>c I#<esc>
 
 " reveal special chars
 set list
@@ -114,10 +116,8 @@ let g:lightline = {
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" change leader to ,
-let mapleader = ","
-
 " custom remapings
 nnoremap <leader>u viwUe
 inoremap jj <esc>
 inoremap <esc> <nop>
+
