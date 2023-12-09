@@ -77,7 +77,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'gosukiwi/vim-atom-dark'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -87,7 +87,7 @@ call plug#end()
 set fillchars=eob:\ 
 
 " source coc
-source ~/.vim/user/coc-user.vim
+" source ~/.vim/user/coc-user.vim
 
 " show nerdtree
 nmap <leader>ne :NERDTree<cr>
