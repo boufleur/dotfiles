@@ -77,6 +77,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'gosukiwi/vim-atom-dark'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -85,13 +86,16 @@ call plug#end()
 " hide the tilde for empty lines
 set fillchars=eob:\ 
 
+" source coc
+source ~/.vim/user/coc-user.vim
 
 " show nerdtree
 nmap <leader>ne :NERDTree<cr>
 
 " fzf shortcuts
-noremap <leader>f <esc><esc>:Files<cr>
-noremap <leader>r <esc><esc>:Rg<cr>
+noremap <leader>fz <esc><esc>:Files<cr>
+noremap <leader>rz <esc><esc>:Rg<cr>
+noremap <leader>gz <esc><esc>:GFiles<cr>
 
 " set colorscheme
 colorscheme atom-dark-256
